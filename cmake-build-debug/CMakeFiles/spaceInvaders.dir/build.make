@@ -76,6 +76,7 @@ include CMakeFiles/spaceInvaders.dir/progress.make
 include CMakeFiles/spaceInvaders.dir/flags.make
 
 CMakeFiles/spaceInvaders.dir/main.cpp.obj: CMakeFiles/spaceInvaders.dir/flags.make
+CMakeFiles/spaceInvaders.dir/main.cpp.obj: CMakeFiles/spaceInvaders.dir/includes_CXX.rsp
 CMakeFiles/spaceInvaders.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/spaceInvaders.dir/main.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spaceInvaders.dir\main.cpp.obj -c C:\Users\nicol\Documents\C++\spaceInvaders\main.cpp
@@ -97,6 +98,17 @@ spaceInvaders_EXTERNAL_OBJECTS =
 
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/main.cpp.obj
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/build.make
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libsfml-audio-s-d.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libsfml-graphics-s-d.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libsfml-window-s-d.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libsfml-system-s-d.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libopenal32.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libvorbisfile.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libvorbisenc.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libvorbis.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libogg.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libFLAC.a
+spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libfreetype.a
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/linklibs.rsp
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/objects1.rsp
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/link.txt
