@@ -1,0 +1,3 @@
+C:\Users\nicol\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\211.6693.114\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\spaceInvaders.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\spaceInvaders.dir/objects.a @CMakeFiles\spaceInvaders.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\spaceInvaders.dir/objects.a -Wl,--no-whole-archive -o spaceInvaders.exe -Wl,--out-implib,libspaceInvaders.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\spaceInvaders.dir\linklibs.rsp
