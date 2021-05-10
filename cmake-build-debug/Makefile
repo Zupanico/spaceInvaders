@@ -141,6 +141,60 @@ spaceInvaders/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/build
 .PHONY : spaceInvaders/fast
 
+bonhomme.obj: bonhomme.cpp.obj
+
+.PHONY : bonhomme.obj
+
+# target to build an object file
+bonhomme.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/bonhomme.cpp.obj
+.PHONY : bonhomme.cpp.obj
+
+bonhomme.i: bonhomme.cpp.i
+
+.PHONY : bonhomme.i
+
+# target to preprocess a source file
+bonhomme.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/bonhomme.cpp.i
+.PHONY : bonhomme.cpp.i
+
+bonhomme.s: bonhomme.cpp.s
+
+.PHONY : bonhomme.s
+
+# target to generate assembly for a file
+bonhomme.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/bonhomme.cpp.s
+.PHONY : bonhomme.cpp.s
+
+laser.obj: laser.cpp.obj
+
+.PHONY : laser.obj
+
+# target to build an object file
+laser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/laser.cpp.obj
+.PHONY : laser.cpp.obj
+
+laser.i: laser.cpp.i
+
+.PHONY : laser.i
+
+# target to preprocess a source file
+laser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/laser.cpp.i
+.PHONY : laser.cpp.i
+
+laser.s: laser.cpp.s
+
+.PHONY : laser.s
+
+# target to generate assembly for a file
+laser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/laser.cpp.s
+.PHONY : laser.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -168,6 +222,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+vaisseau.obj: vaisseau.cpp.obj
+
+.PHONY : vaisseau.obj
+
+# target to build an object file
+vaisseau.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/vaisseau.cpp.obj
+.PHONY : vaisseau.cpp.obj
+
+vaisseau.i: vaisseau.cpp.i
+
+.PHONY : vaisseau.i
+
+# target to preprocess a source file
+vaisseau.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/vaisseau.cpp.i
+.PHONY : vaisseau.cpp.i
+
+vaisseau.s: vaisseau.cpp.s
+
+.PHONY : vaisseau.s
+
+# target to generate assembly for a file
+vaisseau.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/vaisseau.cpp.s
+.PHONY : vaisseau.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -177,9 +258,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... spaceInvaders
+	@echo ... bonhomme.obj
+	@echo ... bonhomme.i
+	@echo ... bonhomme.s
+	@echo ... laser.obj
+	@echo ... laser.i
+	@echo ... laser.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... vaisseau.obj
+	@echo ... vaisseau.i
+	@echo ... vaisseau.s
 .PHONY : help
 
 

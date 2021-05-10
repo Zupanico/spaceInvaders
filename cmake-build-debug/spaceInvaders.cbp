@@ -94,7 +94,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/bonhomme.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/bonhomme.h">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/laser.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/laser.h">
+			<Option target="spaceInvaders"/>
+		</Unit>
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/main.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/vaisseau.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/vaisseau.h">
 			<Option target="spaceInvaders"/>
 		</Unit>
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/CMakeLists.txt">
