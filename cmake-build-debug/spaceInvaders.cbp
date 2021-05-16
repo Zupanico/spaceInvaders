@@ -109,6 +109,12 @@
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/main.cpp">
 			<Option target="spaceInvaders"/>
 		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/mur.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/mur.h">
+			<Option target="spaceInvaders"/>
+		</Unit>
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/vaisseau.cpp">
 			<Option target="spaceInvaders"/>
 		</Unit>

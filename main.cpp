@@ -1,6 +1,20 @@
+/***************************
+ *  Auteurs :   Nicolas Garant, Frédérick Perrazelli-Delorme,
+ *              Olivier ???, Jean-Nyckolas Roy
+ *  Fichier :   main.cpp
+ *  Date :      13/05/2021
+ *  But :       Jeu de Space Invaders en C++ avec la librairie SFML
+ *              Contrôllez un vaisseau qui va de gauche à droite
+ *              et tirez sur les aliens qui descendent lentement
+ *              en tirant des lasers pour vous enlever des vies.
+ *              Vous pouvez vous cacher derrière les murs qui se
+ *              dégradent à mesure que vous et les aliens tirent
+ *              dessus. Si vous êtes touchés, vous perdez une vie
+ *              Au bout de 3 vies perdues, c'est Game Over et
+ *              vous avez de le choix de recommencer ou non.
+ ***************************/
 #include <SFML/Graphics.hpp>
-#include "laser.h"
-#include "bonhomme.h"
+#include "vaisseau.h"
 
 using namespace sf;
 
@@ -16,14 +30,18 @@ int main() {
     Time time;
     bonhomme player;
     RectangleShape fondEcran;
+    laser pewpew;
+
     int dir;
+    int shoot;
 
+    pewpew.init(400, 550, 4, 10);
     player.init(400, 300, 32, 32, IntRect(0, 0, 32, 32), "ressources/charsets.bmp");
-
     fondEcran.setSize(Vector2f(800, 600));
     fondEcran.setFillColor(Color::Black);
 
     while (window.isOpen()) {
+
         while (window.pollEvent(event)) {
             if (event.type == Event::Closed)
                 window.close();
@@ -49,6 +67,9 @@ int main() {
                         dir = 4;
 //code pour déplacer le carré vers la gauche de 10 pixels
                         break;
+                    case Keyboard::Space:
+                        shoot = 1;
+                        break;
                 }
             }
         }
@@ -56,10 +77,11 @@ int main() {
         if (time.asMilliseconds() >= 100.0f) { //à chaque seconde
 
             player.move(dir);
+            pewpew.move(shoot);
+            pewpew.print(window);
 
             window.clear();
             window.draw(fondEcran);
-
             ifCollision(player);
 
             player.print(window);

@@ -1,4 +1,9 @@
-#pragma once
+/***************************
+ *  Auteur :    Nicolas Garant
+ *  Fichier :   bonhomme.h
+ *  Date :      13/05/2021
+ *  But :
+ ***************************/
 
 #include <SFML/Graphics.hpp>
 

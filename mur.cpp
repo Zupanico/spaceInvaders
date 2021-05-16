@@ -1,7 +1,7 @@
 /***************************
  *  Auteur :    Nicolas Garant
- *  Fichier :   vaisseau.cpp
+ *  Fichier :   mur.cpp
  *  Date :      13/05/2021
  *  But :
  ***************************/
-#include "vaisseau.h"
+#include "mur.h"

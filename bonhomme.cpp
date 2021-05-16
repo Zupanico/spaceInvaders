@@ -1,6 +1,9 @@
-//
-// Created by nicol on 30/avr./2021.
-
+/***************************
+ *  Auteur :    Nicolas Garant
+ *  Fichier :   bonhomme.cpp
+ *  Date :      13/05/2021
+ *  But :
+ ***************************/
 #include "bonhomme.h"
 
 void bonhomme::init(int posX, int posY, int _w, int _h, IntRect rectSprinte, const char *nomSprite) {

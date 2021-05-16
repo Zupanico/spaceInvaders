@@ -222,6 +222,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mur.obj: mur.cpp.obj
+
+.PHONY : mur.obj
+
+# target to build an object file
+mur.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/mur.cpp.obj
+.PHONY : mur.cpp.obj
+
+mur.i: mur.cpp.i
+
+.PHONY : mur.i
+
+# target to preprocess a source file
+mur.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/mur.cpp.i
+.PHONY : mur.cpp.i
+
+mur.s: mur.cpp.s
+
+.PHONY : mur.s
+
+# target to generate assembly for a file
+mur.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/mur.cpp.s
+.PHONY : mur.cpp.s
+
 vaisseau.obj: vaisseau.cpp.obj
 
 .PHONY : vaisseau.obj
@@ -267,6 +294,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... mur.obj
+	@echo ... mur.i
+	@echo ... mur.s
 	@echo ... vaisseau.obj
 	@echo ... vaisseau.i
 	@echo ... vaisseau.s
