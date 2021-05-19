@@ -29,10 +29,12 @@ void laser::setPosition(int posX, int posY) {
     _posLaser.setPosition(posX, posY);
 }
 
-void laser::move(int shoot) {
+void laser::move(int shoot, int posX, int posY) {
     if (shoot == 1) {
-        _posLaser.move(Vector2f(0, -10));
+        _posLaser.setPosition(posX, posY);
+        //    _posLaser.move(Vector2f(0, -10));
     }
+
 }
 
 void laser::print(RenderWindow &window) const {

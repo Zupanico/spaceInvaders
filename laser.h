@@ -24,7 +24,7 @@ public:
 
     void setPosition(int posX, int posY);
 
-    void move(int shoot);
+    void move(int shoot, int posX, int posY);
 
     void print(RenderWindow &window) const;
 };

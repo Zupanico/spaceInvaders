@@ -32,6 +32,8 @@ int main() {
     RectangleShape fondEcran;
     laser pewpew;
 
+    int posX;
+    int posY;
     int dir;
     int shoot;
 
@@ -69,22 +71,26 @@ int main() {
                         break;
                     case Keyboard::Space:
                         shoot = 1;
+                        posX = player.getPosition().x + 16;
+                        posY = 550;
                         break;
                 }
             }
         }
         time = clock.getElapsedTime(); //Prends le temps de l’horloge
-        if (time.asMilliseconds() >= 100.0f) { //à chaque seconde
+        if (time.asMilliseconds() >= 75.0f) { //à chaque seconde
 
             player.move(dir);
-            pewpew.move(shoot);
-            pewpew.print(window);
+            posY -= 10;
+            pewpew.move(shoot, posX, posY);
+
 
             window.clear();
             window.draw(fondEcran);
             ifCollision(player);
 
             player.print(window);
+            pewpew.print(window);
             window.display();
             clock.restart();
         }
