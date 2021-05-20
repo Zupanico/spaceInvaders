@@ -8,10 +8,10 @@ alien::alien()
 }
 
 //	Constructeur avec paramètre
-alien::alien(float x, float y, int w, int h, IntRect rectImg, const char* nomSprite, bool alive)
+alien::alien(float x, float y, int w, int h, IntRect rectImg,int i, bool alive)
 {
 	setRectangleShape(x, y, w, h);
-	setTexture(nomSprite);
+	setType(i);
 	setRectImg(rectImg);
 	setAlive(alive);
 }
@@ -37,6 +37,11 @@ Vector2f alien::getPosition()const
 	return _alien.getPosition();
 }
 
+int alien::getType() const
+{
+	return _type;
+}
+
 //	Retourne les coordonnées de l'image
 IntRect alien::getRectImg() const
 {
@@ -60,6 +65,11 @@ void alien::setRectangleShape(float x, float y, int w, int h)
 {
 	_alien.setPosition(x, y);
 	_alien.setSize(Vector2f(w, h));
+}
+
+void alien::setType(int i)
+{
+	_type = i;
 }
 
 //	Setteur de la position
