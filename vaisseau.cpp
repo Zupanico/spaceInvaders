@@ -87,13 +87,9 @@ void vaisseau::move(int dir)
 
     case 4:
 		_vaisseau.move(Vector2f(-10, 0));
-		_rectSprite.top = 32; //choisi la bonne ligne selon la direction
-//code pour déplacer le carré vers la gauche de 10 pixels
 		break;
     case 2:
         _vaisseau.move(Vector2f(10, 0));
-        _rectSprite.top = 64; //choisi la bonne ligne selon la direction
-//code pour déplacer le carré bleu vers la droite de 10 pixels
         break; 
     }
     _rectSprite.left += 32; //change l’image horizontalement
