@@ -85,7 +85,7 @@ void vaisseau::move(int dir)
 {
     switch (dir) {
 
-    case 1:
+    case 4:
 		_vaisseau.move(Vector2f(-10, 0));
 		_rectSprite.top = 32; //choisi la bonne ligne selon la direction
 //code pour déplacer le carré vers la gauche de 10 pixels
