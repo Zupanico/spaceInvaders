@@ -1,3 +1,4 @@
+
 #pragma once
 #include"alien.h"
 #include<vector>
@@ -15,11 +16,10 @@ public:
 	// CONSTRUCTEUR
 	void initializeGrille();
 	
+	// Méthode
 	void moveRight();
 	void moveDown();
 	void moveLeft();
-	void movementComplet(RenderWindow& window);
-
 	void draw(RenderWindow& window);
 
 };
