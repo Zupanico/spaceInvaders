@@ -11,3 +11,8 @@ Fonctionnalité du jeu (Play)	J-N
  *  Date :
  *  But :
  ***************************/
+
+ {"ressources/mur0.bmp", "ressources/mur1.bmp", "ressources/mur2.bmp",
+  "ressources/mur3.bmp", "ressources/mur4.bmp", "ressources/mur5.bmp",
+  "ressources/mur6.bmp", "ressources/mur7.bmp", "ressources/mur8.bmp",
+  "ressources/mur9.bmp", "ressources/mur10.bmp", "ressources/mur11.bmp"};

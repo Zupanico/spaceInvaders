@@ -37,8 +37,7 @@ void laser::move(bool shoot, int posX, int posY) {
 }
 
 void laser::print(RenderWindow &window) const {
-    if (_isActive)      //Si le Laser est activé il sera imprimé
-        window.draw(_posLaser);
+    window.draw(_posLaser);
 }
 
 

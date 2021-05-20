@@ -31,11 +31,16 @@ int main() {
     bonhomme player;
     RectangleShape fondEcran;
     laser pewpew;
+    mur murs[4];
 
     int posX;
     int posY;
     int dir;
     bool shoot;
+
+    for (int i = 0; i < 4; ++i) {
+        murs[i].init((80 + i * (100 + 80)), 400, 100, 75, IntRect(0, 0, 100, 75), "ressources/mur0.bmp");
+    }
 
     pewpew.init(400, 550, 4, 10, false);
     player.init(400, 550, 32, 32, IntRect(0, 0, 32, 32), "ressources/charsets.bmp");
@@ -89,8 +94,13 @@ int main() {
             window.draw(fondEcran);
             ifCollision(player);
 
+            for (int i = 0; i < 4; ++i) {
+                murs[i].print(window);
+            }
+
             player.print(window);
             pewpew.print(window);
+
             window.display();
             clock.restart();
         }

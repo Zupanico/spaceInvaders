@@ -6,95 +6,83 @@
  ***************************/
 #include "vaisseau.h"
 
- //	Constructeur sans paramètre
-vaisseau::vaisseau()
-{
-	setRectangleShape(0, 0, 32, 32);
+//	Constructeur sans paramètre
+vaisseau::vaisseau() {
+    setRectangleShape(0, 0, 32, 32);
 }
 
 //	Constructeur avec paramètre
-vaisseau::vaisseau(float x, float y, int w, int h, IntRect rectImg, const char* nomSprite)
-{
-	setRectangleShape(x, y, w, h);
-	setTexture(nomSprite);
-	setIntRect(rectImg);
+vaisseau::vaisseau(float x, float y, int w, int h, IntRect rectImg, const char *nomSprite) {
+    setRectangleShape(x, y, w, h);
+    setTexture(nomSprite);
+    setIntRect(rectImg);
 }
 
 // Initialize le vaisseau
-void vaisseau::initialize(float x, float y, int w, int h, IntRect rectImg, const char* nomSprite)
-{
-	setRectangleShape(x, y, w, h);
-	setTexture(nomSprite);
-	setIntRect(rectImg);
+void vaisseau::initialize(float x, float y, int w, int h, IntRect rectImg, const char *nomSprite) {
+    setRectangleShape(x, y, w, h);
+    setTexture(nomSprite);
+    setIntRect(rectImg);
 }
 
 // Retourne les valeurs du vaisseau
-RectangleShape vaisseau::getRectangleShape() const
-{
-	return _vaisseau;
+RectangleShape vaisseau::getRectangleShape() const {
+    return _vaisseau;
 }
 
 // Retourne la position du vaisseau
-Vector2f vaisseau::getPosition()const
-{
-	return _vaisseau.getPosition();
+Vector2f vaisseau::getPosition() const {
+    return _vaisseau.getPosition();
 }
 
 //	Retourne les coordonnées de l'image
-IntRect vaisseau::getIntRect() const
-{
-	return _rectSprite;
+IntRect vaisseau::getIntRect() const {
+    return _rectSprite;
 }
 
 // Retourne la texture;
-Texture vaisseau::getTexture() const
-{
-	return _textureVaisseau;
+Texture vaisseau::getTexture() const {
+    return _textureVaisseau;
 }
 
 
 // Setteur de la position et grosseur du vaisseau;
-void vaisseau::setRectangleShape(float x, float y, int w, int h)
-{
-	_vaisseau.setPosition(x, y);
-	_vaisseau.setSize(Vector2f(w, h));
+void vaisseau::setRectangleShape(float x, float y, int w, int h) {
+    _vaisseau.setPosition(x, y);
+    _vaisseau.setSize(Vector2f(w, h));
 }
 
 //	Setteur de la position
-void vaisseau::setPosition(float x, float y)
-{
-	_vaisseau.setPosition(x, y);
+void vaisseau::setPosition(float x, float y) {
+    _vaisseau.setPosition(x, y);
 }
 
 //	Setteur des coordonnées image;
-void vaisseau::setIntRect(IntRect rectImg)
-{
-	_vaisseau.setTextureRect(rectImg);
+void vaisseau::setIntRect(IntRect rectImg) {
+    _vaisseau.setTextureRect(rectImg);
 }
 
 // Switch case pour faire animation et initialization du vaisseau;
-void vaisseau::setTexture(const char* nomSprite)
-{
-	_textureVaisseau.loadFromFile(nomSprite);
-	_vaisseau.setTexture(&_textureVaisseau);
+void vaisseau::setTexture(const char *nomSprite) {
+    _textureVaisseau.loadFromFile(nomSprite);
+    _vaisseau.setTexture(&_textureVaisseau);
     setIntRect(_rectSprite);
 }
 
 
-void vaisseau::move(int dir)
-{
+void vaisseau::move(int dir) {
     switch (dir) {
 
-    case 1:
-		_vaisseau.move(Vector2f(-10, 0));
-		_rectSprite.top = 32; //choisi la bonne ligne selon la direction
+        case 1:
+            _vaisseau.move(Vector2f(-10, 0));
+            _rectSprite.top = 32; //choisi la bonne ligne selon la direction
 //code pour déplacer le carré vers la gauche de 10 pixels
-		break;
-    case 2:
-        _vaisseau.move(Vector2f(10, 0));
-        _rectSprite.top = 64; //choisi la bonne ligne selon la direction
+            break;
+        case 2:
+            _vaisseau.move(Vector2f(10, 0));
+            _rectSprite.top = 64; //choisi la bonne ligne selon la direction
 //code pour déplacer le carré bleu vers la droite de 10 pixels
-        break; 
+            break;
     }
     _rectSprite.left += 32; //change l’image horizontalement
     if (_rectSprite.left >= 96) //Après 3, on revient à la première à 0
@@ -103,8 +91,7 @@ void vaisseau::move(int dir)
 }
 
 // Draw de l'alien;
-void vaisseau::print(RenderWindow& window)
-{
-	window.draw(_vaisseau);
+void vaisseau::print(RenderWindow &window) {
+    window.draw(_vaisseau);
 }
 
