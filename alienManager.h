@@ -1,4 +1,3 @@
-
 #pragma once
 #include"alien.h"
 #include<vector>
@@ -17,6 +16,8 @@ public:
 	void initializeGrille();
 	
 	// Méthode
+	void spritePlus();
+	void spriteLess();
 	void moveRight();
 	void moveDown();
 	void moveLeft();
