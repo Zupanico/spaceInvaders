@@ -14,7 +14,7 @@
 
 using namespace sf;
 
-class vaisseau : public bonhomme {
+class vaisseau {
 
 private:
 
