@@ -1,8 +1,8 @@
 #include "alienManager.h"
 
+// Initialization du vector contenant les objet aliens;
 void alienManager::initializeGrille()
 {
-	alien invader;
 	IntRect rectImg(0, 0, 32, 32);
 	int espace = 10;
 	for (int i = 0; i < 5; i++) {
@@ -12,19 +12,19 @@ void alienManager::initializeGrille()
 			float posY = i * 32 + (espace * i * 3) + 32;
 
 			if (i == 0) {
-				invader.initialize(posX, posY, 32, 32, rectImg,"ressources/Squid1.bmp", true);
+				_invader.emplace_back(alien(posX, posY, 32, 32, rectImg, "ressources/Squid1.bmp", true));	
 			}
 			if (i == 1 || i == 2) {
-				invader.initialize(posX, posY, 32, 32, rectImg,"ressources/Skull1.bmp", true);
+				_invader.emplace_back(alien(posX, posY, 32, 32, rectImg, "ressources/Skull1.bmp", true));
 			}
 			if (i == 3 || i == 4) {
-				invader.initialize(posX, posY, 32, 32, rectImg,"ressources/Alien1.bmp", true);
+				_invader.emplace_back(alien(posX, posY, 32, 32, rectImg, "ressources/Alien1.bmp", true));
 			}
-			_invader.push_back(invader);
 		}
 	}
 }
 
+//	Les aliens bougent a droite;
 void alienManager::moveRight()
 {
 	for (int i = 0; i < _invader.size(); i++) {
@@ -32,6 +32,7 @@ void alienManager::moveRight()
 	}
 }
 
+//	Les aliens bougent a down;
 void alienManager::moveDown()
 {
 	for (int i = 0; i < _invader.size(); i++) {
@@ -39,6 +40,7 @@ void alienManager::moveDown()
 	}
 }
 
+//	Les aliens bougent a gauce;
 void alienManager::moveLeft()
 {
 	for (int i = 0; i < _invader.size(); i++) {
@@ -46,14 +48,7 @@ void alienManager::moveLeft()
 	}
 }
 
-void alienManager::movementComplet(RenderWindow& window)
-{	
-	moveRight();
-	moveDown();
-	moveLeft();
-}
-
-
+//	Dessine les aliens si il sont vivant;
 void alienManager::draw(RenderWindow& window)
 {
 	for (int i = 0; i < _invader.size(); i++) {
