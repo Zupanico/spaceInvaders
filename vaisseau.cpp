@@ -92,10 +92,6 @@ void vaisseau::move(int dir)
         _vaisseau.move(Vector2f(10, 0));
         break; 
     }
-    _rectSprite.left += 32; //change l’image horizontalement
-    if (_rectSprite.left >= 96) //Après 3, on revient à la première à 0
-        _rectSprite.left = 0;
-    _vaisseau.setTextureRect(_rectSprite);
 }
 
 // Draw de l'alien;
