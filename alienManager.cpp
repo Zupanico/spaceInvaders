@@ -12,14 +12,35 @@ void alienManager::initializeGrille()
 			float posY = i * 32 + (espace * i * 3) + 32;
 
 			if (i == 0) {
-				_invader.emplace_back(alien(posX, posY, 32, 32, rectImg, "ressources/Squid1.bmp", true));	
+				alien squid(posX, posY, 32, 32, rectImg,1, true);
+				_invader.emplace_back(squid);
 			}
 			if (i == 1 || i == 2) {
-				_invader.emplace_back(alien(posX, posY, 32, 32, rectImg, "ressources/Skull1.bmp", true));
+				alien skull(posX, posY, 32, 32, rectImg,3, true);
+				_invader.emplace_back(skull);
 			}
 			if (i == 3 || i == 4) {
-				_invader.emplace_back(alien(posX, posY, 32, 32, rectImg, "ressources/Alien1.bmp", true));
+				alien invader(posX, posY, 32, 32, rectImg,5, true);
+				_invader.emplace_back(invader);
 			}
+		}
+	}
+}
+
+void alienManager::spritePlus()
+{
+	for (int i = 0; i < _invader.size(); i++) {
+		if (_invader[i].isAlive()) {
+			_invader[i].setType(_invader[i].getType() + 1);
+		}
+	}
+}
+
+void alienManager::spriteLess()
+{
+	for (int i = 0; i < _invader.size(); i++) {
+		if (_invader[i].isAlive()) {
+			_invader[i].setType(_invader[i].getType() - 1);
 		}
 	}
 }
@@ -28,15 +49,20 @@ void alienManager::initializeGrille()
 void alienManager::moveRight()
 {
 	for (int i = 0; i < _invader.size(); i++) {
-		_invader[i].move(_invader[i].getPosition().x + 10, _invader[i].getPosition().y);
+		if (_invader[i].isAlive()) {
+			_invader[i].move(_invader[i].getPosition().x + 10, _invader[i].getPosition().y);
+		}
 	}
+	
 }
 
 //	Les aliens bougent a down;
 void alienManager::moveDown()
 {
 	for (int i = 0; i < _invader.size(); i++) {
-		_invader[i].move(_invader[i].getPosition().x, _invader[i].getPosition().y + 10);
+		if (_invader[i].isAlive()) {
+			_invader[i].move(_invader[i].getPosition().x, _invader[i].getPosition().y + 10);
+		}
 	}
 }
 
@@ -44,7 +70,9 @@ void alienManager::moveDown()
 void alienManager::moveLeft()
 {
 	for (int i = 0; i < _invader.size(); i++) {
-		_invader[i].move(_invader[i].getPosition().x - 10, _invader[i].getPosition().y);
+		if (_invader[i].isAlive()) {
+			_invader[i].move(_invader[i].getPosition().x - 10, _invader[i].getPosition().y);
+		}
 	}
 }
 
@@ -53,8 +81,28 @@ void alienManager::draw(RenderWindow& window)
 {
 	for (int i = 0; i < _invader.size(); i++) {
 		if (_invader[i].isAlive()) {
-
+			
+			if (_invader[i].getType() == 1) {
+				_invader[i].setTexture("ressources/Squid1.bmp");
+			}
+			if (_invader[i].getType() == 2) {
+				_invader[i].setTexture("ressources/Squid2.bmp");	
+			}
+			if (_invader[i].getType() == 3) {
+				_invader[i].setTexture("ressources/Skull1.bmp");
+			}
+			if (_invader[i].getType() == 4) {
+				_invader[i].setTexture("ressources/Skull2.bmp");	
+			}
+			if (_invader[i].getType() == 5) {
+				_invader[i].setTexture("ressources/Alien1.bmp");
+			}
+			if (_invader[i].getType() == 6) {
+				_invader[i].setTexture("ressources/Alien2.bmp");	
+			}
 			_invader[i].print(window);
 		}
 	}
 }
+
+
