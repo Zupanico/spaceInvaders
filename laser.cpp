@@ -6,7 +6,7 @@
  ***************************/
 #include "laser.h"
 
-void laser::init(int posX, int posY, int _w, int _h) {
+void laser::init(int posX, int posY, int _w, int _h, bool isActive) {
     setRectangleShape(posX, posY, _w, _h);
 }
 
@@ -19,7 +19,7 @@ Vector2f laser::getPosition() const {
 }
 
 void laser::setRectangleShape(int posX, int posY, int _w, int _h) {
-    _posLaser.setFillColor(Color::Green);
+    _posLaser.setFillColor(Color::Transparent);
     _posLaser.setSize(Vector2f(_w, _h));
     _posLaser.setPosition(posX, posY);
 
@@ -29,16 +29,16 @@ void laser::setPosition(int posX, int posY) {
     _posLaser.setPosition(posX, posY);
 }
 
-void laser::move(int shoot, int posX, int posY) {
-    if (shoot == 1) {
+void laser::move(bool shoot, int posX, int posY) {
+    if (shoot) {
         _posLaser.setPosition(posX, posY);
-        //    _posLaser.move(Vector2f(0, -10));
+        _posLaser.setFillColor(Color::Green);
     }
-
 }
 
 void laser::print(RenderWindow &window) const {
-    window.draw(_posLaser);
+    if (_isActive)      //Si le Laser est activé il sera imprimé
+        window.draw(_posLaser);
 }
 
 

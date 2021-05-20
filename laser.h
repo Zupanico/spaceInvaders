@@ -12,9 +12,9 @@ using namespace sf;
 class laser {
 private:
     RectangleShape _posLaser;
-
+    bool _isActive;
 public:
-    void init(int posX, int posY, int _w, int _h);
+    void init(int posX, int posY, int _w, int _h, bool isActive);
 
     RectangleShape getRectangleShape() const;
 
@@ -24,7 +24,7 @@ public:
 
     void setPosition(int posX, int posY);
 
-    void move(int shoot, int posX, int posY);
+    void move(bool shoot, int posX, int posY);
 
     void print(RenderWindow &window) const;
 };

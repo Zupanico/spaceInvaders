@@ -145,13 +145,43 @@ CMakeFiles/spaceInvaders.dir/mur.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spaceInvaders.dir/mur.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nicol\Documents\C++\spaceInvaders\mur.cpp -o CMakeFiles\spaceInvaders.dir\mur.cpp.s
 
+CMakeFiles/spaceInvaders.dir/alien.cpp.obj: CMakeFiles/spaceInvaders.dir/flags.make
+CMakeFiles/spaceInvaders.dir/alien.cpp.obj: CMakeFiles/spaceInvaders.dir/includes_CXX.rsp
+CMakeFiles/spaceInvaders.dir/alien.cpp.obj: ../alien.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/spaceInvaders.dir/alien.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spaceInvaders.dir\alien.cpp.obj -c C:\Users\nicol\Documents\C++\spaceInvaders\alien.cpp
+
+CMakeFiles/spaceInvaders.dir/alien.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spaceInvaders.dir/alien.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nicol\Documents\C++\spaceInvaders\alien.cpp > CMakeFiles\spaceInvaders.dir\alien.cpp.i
+
+CMakeFiles/spaceInvaders.dir/alien.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spaceInvaders.dir/alien.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nicol\Documents\C++\spaceInvaders\alien.cpp -o CMakeFiles\spaceInvaders.dir\alien.cpp.s
+
+CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj: CMakeFiles/spaceInvaders.dir/flags.make
+CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj: CMakeFiles/spaceInvaders.dir/includes_CXX.rsp
+CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj: ../alienManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\spaceInvaders.dir\alienManager.cpp.obj -c C:\Users\nicol\Documents\C++\spaceInvaders\alienManager.cpp
+
+CMakeFiles/spaceInvaders.dir/alienManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spaceInvaders.dir/alienManager.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nicol\Documents\C++\spaceInvaders\alienManager.cpp > CMakeFiles\spaceInvaders.dir\alienManager.cpp.i
+
+CMakeFiles/spaceInvaders.dir/alienManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spaceInvaders.dir/alienManager.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nicol\Documents\C++\spaceInvaders\alienManager.cpp -o CMakeFiles\spaceInvaders.dir\alienManager.cpp.s
+
 # Object files for target spaceInvaders
 spaceInvaders_OBJECTS = \
 "CMakeFiles/spaceInvaders.dir/main.cpp.obj" \
 "CMakeFiles/spaceInvaders.dir/laser.cpp.obj" \
 "CMakeFiles/spaceInvaders.dir/bonhomme.cpp.obj" \
 "CMakeFiles/spaceInvaders.dir/vaisseau.cpp.obj" \
-"CMakeFiles/spaceInvaders.dir/mur.cpp.obj"
+"CMakeFiles/spaceInvaders.dir/mur.cpp.obj" \
+"CMakeFiles/spaceInvaders.dir/alien.cpp.obj" \
+"CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj"
 
 # External object files for target spaceInvaders
 spaceInvaders_EXTERNAL_OBJECTS =
@@ -161,6 +191,8 @@ spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/laser.cpp.obj
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/bonhomme.cpp.obj
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/vaisseau.cpp.obj
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/mur.cpp.obj
+spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/alien.cpp.obj
+spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/build.make
 spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libsfml-audio-s-d.a
 spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libsfml-graphics-s-d.a
@@ -176,7 +208,7 @@ spaceInvaders.exe: ../libs/SFML-2.5.1/lib/libfreetype.a
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/linklibs.rsp
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/objects1.rsp
 spaceInvaders.exe: CMakeFiles/spaceInvaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable spaceInvaders.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable spaceInvaders.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\spaceInvaders.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

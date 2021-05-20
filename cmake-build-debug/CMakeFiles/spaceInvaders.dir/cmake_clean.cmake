@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/spaceInvaders.dir/alien.cpp.obj"
+  "CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj"
   "CMakeFiles/spaceInvaders.dir/bonhomme.cpp.obj"
   "CMakeFiles/spaceInvaders.dir/laser.cpp.obj"
   "CMakeFiles/spaceInvaders.dir/main.cpp.obj"

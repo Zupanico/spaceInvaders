@@ -141,6 +141,60 @@ spaceInvaders/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/build
 .PHONY : spaceInvaders/fast
 
+alien.obj: alien.cpp.obj
+
+.PHONY : alien.obj
+
+# target to build an object file
+alien.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/alien.cpp.obj
+.PHONY : alien.cpp.obj
+
+alien.i: alien.cpp.i
+
+.PHONY : alien.i
+
+# target to preprocess a source file
+alien.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/alien.cpp.i
+.PHONY : alien.cpp.i
+
+alien.s: alien.cpp.s
+
+.PHONY : alien.s
+
+# target to generate assembly for a file
+alien.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/alien.cpp.s
+.PHONY : alien.cpp.s
+
+alienManager.obj: alienManager.cpp.obj
+
+.PHONY : alienManager.obj
+
+# target to build an object file
+alienManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj
+.PHONY : alienManager.cpp.obj
+
+alienManager.i: alienManager.cpp.i
+
+.PHONY : alienManager.i
+
+# target to preprocess a source file
+alienManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/alienManager.cpp.i
+.PHONY : alienManager.cpp.i
+
+alienManager.s: alienManager.cpp.s
+
+.PHONY : alienManager.s
+
+# target to generate assembly for a file
+alienManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/alienManager.cpp.s
+.PHONY : alienManager.cpp.s
+
 bonhomme.obj: bonhomme.cpp.obj
 
 .PHONY : bonhomme.obj
@@ -285,6 +339,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... spaceInvaders
+	@echo ... alien.obj
+	@echo ... alien.i
+	@echo ... alien.s
+	@echo ... alienManager.obj
+	@echo ... alienManager.i
+	@echo ... alienManager.s
 	@echo ... bonhomme.obj
 	@echo ... bonhomme.i
 	@echo ... bonhomme.s

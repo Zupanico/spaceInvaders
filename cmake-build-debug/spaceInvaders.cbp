@@ -94,6 +94,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/alien.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/alien.h">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/alienManager.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/alienManager.h">
+			<Option target="spaceInvaders"/>
+		</Unit>
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/bonhomme.cpp">
 			<Option target="spaceInvaders"/>
 		</Unit>

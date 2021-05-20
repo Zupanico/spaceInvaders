@@ -35,10 +35,10 @@ int main() {
     int posX;
     int posY;
     int dir;
-    int shoot;
+    bool shoot;
 
-    pewpew.init(400, 550, 4, 10);
-    player.init(400, 300, 32, 32, IntRect(0, 0, 32, 32), "ressources/charsets.bmp");
+    pewpew.init(400, 550, 4, 10, false);
+    player.init(400, 550, 32, 32, IntRect(0, 0, 32, 32), "ressources/charsets.bmp");
     fondEcran.setSize(Vector2f(800, 600));
     fondEcran.setFillColor(Color::Black);
 
@@ -70,7 +70,7 @@ int main() {
 //code pour déplacer le carré vers la gauche de 10 pixels
                         break;
                     case Keyboard::Space:
-                        shoot = 1;
+                        shoot = true;
                         posX = player.getPosition().x + 16;
                         posY = 550;
                         break;
@@ -81,7 +81,7 @@ int main() {
         if (time.asMilliseconds() >= 75.0f) { //à chaque seconde
 
             player.move(dir);
-            posY -= 10;
+            posY -= 15;
             pewpew.move(shoot, posX, posY);
 
 
