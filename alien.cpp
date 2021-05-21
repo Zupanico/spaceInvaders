@@ -1,3 +1,9 @@
+/***************************
+ *  Auteur :    Frédérick Perrazelli
+ *  Fichier :   laser.cpp
+ *  Date :      13/05/2021
+ *  But :       Aliens de space invaders
+ ***************************/
 #include "alien.h"
 
 //	Constructeur sans paramètre
@@ -15,11 +21,12 @@ alien::alien(float x, float y, int w, int h, IntRect rectImg, int i, bool alive)
 }
 
 // Initialize l'alien
-void alien::initialize(float x, float y, int w, int h, IntRect rectImg, const char *nomSprite, bool alive) {
+void alien::initialize(float x, float y, int w, int h, IntRect rectImg, int texture, bool alive) {
     setRectangleShape(x, y, w, h);
-    setTexture(nomSprite);
+    setTexture(texture);
     setRectImg(rectImg);
     setAlive(alive);
+    _type = texture;
 }
 
 // Retourne les valeurs de l'alien
@@ -72,8 +79,8 @@ void alien::setRectImg(IntRect rectImg) {
 }
 
 // Switch case pour faire animation et initialization de l'alien;
-void alien::setTexture(const char *nomSprite) {
-    _texture.loadFromFile(nomSprite);
+void alien::setTexture(int texture) {
+    _texture.loadFromFile(textAlien[texture]);
     _alien.setTexture(&_texture);
 }
 
@@ -83,11 +90,28 @@ void alien::setAlive(bool alive) {
 }
 
 void alien::move(float posX, float posY) {
-    _alien.setPosition(posX, posY);
+    _alien.move(posX, posY);
 }
 
 // Draw de l'alien;
-void alien::print(RenderWindow &window) {
-    window.draw(_alien);
+void alien::print(RenderWindow& window) {
+    if (_alive == true)
+        window.draw(_alien);
 }
 
+void alien::changeSprite()
+{
+    if (_type < 3) {
+        _type += 3;
+    }
+    else {
+        _type -= 3;
+    }
+
+    setTexture(_type);
+}
+
+void alien::hit()
+{
+    _alive = false;
+}

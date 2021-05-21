@@ -16,3 +16,19 @@ Fonctionnalité du jeu (Play)	J-N
   "ressources/mur3.bmp", "ressources/mur4.bmp", "ressources/mur5.bmp",
   "ressources/mur6.bmp", "ressources/mur7.bmp", "ressources/mur8.bmp",
   "ressources/mur9.bmp", "ressources/mur10.bmp", "ressources/mur11.bmp"};
+
+
+  Minotaure 	-- .. -. --- - .- ..- .-. .
+  Licorne		.-.. .. -.-. --- .-. -. .
+  Phoénix		.--. .... --- ..-.. -. .. -..-
+  El chupacabra	. .-.. / -.-. .... ..- .--. .- -.-. .- -... .-. .-
+
+  Dragon		-.. .-. .- --. --- -.
+  Basilic		-... .- ... .. .-.. .. -.-.
+  Centaure	    -.-. . -. - .- ..- .-. .
+  Gargouille	--. .- .-. --. --- ..- .. .-.. .-.. .
+
+  Elfe		    . .-.. ..-. .
+  Golem	    	--. --- .-.. . --
+  Cyclope		-.-. -.-- -.-. .-.. --- .--. .
+  Méduse		-- ..-.. -.. ..- ... .

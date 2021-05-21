@@ -112,6 +112,12 @@
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/bonhomme.h">
 			<Option target="spaceInvaders"/>
 		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/game.cpp">
+			<Option target="spaceInvaders"/>
+		</Unit>
+		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/game.h">
+			<Option target="spaceInvaders"/>
+		</Unit>
 		<Unit filename="C:/Users/nicol/Documents/C++/spaceInvaders/laser.cpp">
 			<Option target="spaceInvaders"/>
 		</Unit>

@@ -12,14 +12,14 @@ vaisseau::vaisseau() {
 }
 
 //	Constructeur avec paramètre
-vaisseau::vaisseau(float x, float y, int w, int h, IntRect rectImg, const char *nomSprite) {
+vaisseau::vaisseau(float x, float y, int w, int h, IntRect rectImg, const char* nomSprite) {
     setRectangleShape(x, y, w, h);
     setTexture(nomSprite);
     setIntRect(rectImg);
 }
 
 // Initialize le vaisseau
-void vaisseau::initialize(float x, float y, int w, int h, IntRect rectImg, const char *nomSprite) {
+void vaisseau::initialize(float x, float y, int w, int h, IntRect rectImg, const char* nomSprite) {
     setRectangleShape(x, y, w, h);
     setTexture(nomSprite);
     setIntRect(rectImg);
@@ -63,7 +63,7 @@ void vaisseau::setIntRect(IntRect rectImg) {
 }
 
 // Switch case pour faire animation et initialization du vaisseau;
-void vaisseau::setTexture(const char *nomSprite) {
+void vaisseau::setTexture(const char* nomSprite) {
     _textureVaisseau.loadFromFile(nomSprite);
     _vaisseau.setTexture(&_textureVaisseau);
     setIntRect(_rectSprite);
@@ -73,25 +73,16 @@ void vaisseau::setTexture(const char *nomSprite) {
 void vaisseau::move(int dir) {
     switch (dir) {
 
-        case 1:
-            _vaisseau.move(Vector2f(-10, 0));
-            _rectSprite.top = 32; //choisi la bonne ligne selon la direction
-//code pour déplacer le carré vers la gauche de 10 pixels
-            break;
         case 2:
-            _vaisseau.move(Vector2f(10, 0));
-            _rectSprite.top = 64; //choisi la bonne ligne selon la direction
-//code pour déplacer le carré bleu vers la droite de 10 pixels
+            _vaisseau.move(Vector2f(15, 0));
+            break;
+        case 4:
+            _vaisseau.move(Vector2f(-15, 0));
             break;
     }
-    _rectSprite.left += 32; //change l’image horizontalement
-    if (_rectSprite.left >= 96) //Après 3, on revient à la première à 0
-        _rectSprite.left = 0;
-    _vaisseau.setTextureRect(_rectSprite);
 }
 
 // Draw de l'alien;
-void vaisseau::print(RenderWindow &window) {
+void vaisseau::print(RenderWindow& window) {
     window.draw(_vaisseau);
 }
-

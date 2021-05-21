@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/nicol/Documents/C++/spaceInvaders/alien.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/alien.cpp.obj"
   "C:/Users/nicol/Documents/C++/spaceInvaders/alienManager.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/alienManager.cpp.obj"
   "C:/Users/nicol/Documents/C++/spaceInvaders/bonhomme.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/bonhomme.cpp.obj"
+  "C:/Users/nicol/Documents/C++/spaceInvaders/game.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/game.cpp.obj"
   "C:/Users/nicol/Documents/C++/spaceInvaders/laser.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/laser.cpp.obj"
   "C:/Users/nicol/Documents/C++/spaceInvaders/main.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/main.cpp.obj"
   "C:/Users/nicol/Documents/C++/spaceInvaders/mur.cpp" "C:/Users/nicol/Documents/C++/spaceInvaders/cmake-build-debug/CMakeFiles/spaceInvaders.dir/mur.cpp.obj"

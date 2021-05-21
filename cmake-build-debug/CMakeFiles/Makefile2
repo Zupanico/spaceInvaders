@@ -92,12 +92,12 @@ clean: CMakeFiles/spaceInvaders.dir/clean
 CMakeFiles/spaceInvaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\spaceInvaders.dir\build.make CMakeFiles/spaceInvaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target spaceInvaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target spaceInvaders"
 .PHONY : CMakeFiles/spaceInvaders.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/spaceInvaders.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/spaceInvaders.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicol\Documents\C++\spaceInvaders\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/spaceInvaders.dir/rule
